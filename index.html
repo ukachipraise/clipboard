@@ -5,37 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clipboard Landing Page</title>
 
-  <!-- Google Font -->
+
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- TailwindCSS -->
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Bai Jamjuree', 'sans-serif'],
-          },
-          colors: {
-            green: {
-              500: 'hsl(171, 66%, 44%)',
-            },
-            blue: {
-              100: 'hsl(233, 100%, 69%)',
-            },
-            gray: {
-              700: 'hsl(210, 10%, 33%)',
-              500: 'hsl(201, 11%, 66%)',
-            },
-          },
-          fontSize: {
-            base: '18px',
-          },
-        }
+  <script src="config.js"></script>
+  
+  <Style>
+    @keyframes scroll {
+      0% { transform:translateX(0);}
+      100% {
+        transform:translateX(-50%);
       }
     }
-  </script>
+    .animate-scroll {
+      display: inline-flex;
+      animation: scroll 20s linear infinite;
+    }
+    </Style>
 </head>
 <body class="font-sans text-[#000]">
 
@@ -119,12 +107,21 @@
     </section>
   </section>
 
-    <section class="py-16 bg-gray-50 flex flex-wrap justify-center items-center gap-12 px-6">
-    <img src="./images/logo-google.png" alt="Google">
-    <img src="./images/logo-ibm.png" alt="IBM">
-    <img src="./images/logo-microsoft.png" alt="Microsoft">
-    <img src="./images/logo-hp.png" alt="HP">
-    <img src="./images/logo-vector-graphics.png" alt="Vector Graphics">
+    <section class="py-16 bg-gray-50 flex flex-wrap justify-center items-center gap-12 px-6 overflow-hidden">
+      <div class="animate-scroll">
+          <img src="./images/logo-google.png" alt="Google">
+          <img src="./images/logo-ibm.png" alt="IBM">
+          <img src="./images/logo-microsoft.png" alt="Microsoft">
+          <img src="./images/logo-hp.png" alt="HP">
+          <img src="./images/logo-vector-graphics.png" alt="Vector Graphics">
+          <img src="./images/logo-google.png" alt="Google">
+          <img src="./images/logo-ibm.png" alt="IBM">
+          <img src="./images/logo-microsoft.png" alt="Microsoft">
+          <img src="./images/logo-hp.png" alt="HP">
+          <img src="./images/logo-vector-graphics.png" alt="Vector Graphics"  >
+        
+      </div>
+   
   </section>
 
   
